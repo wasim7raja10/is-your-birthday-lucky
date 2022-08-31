@@ -61,4 +61,35 @@ footer {
   bottom: 0;
   left: 0;
   right: 0;
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 1px solid #e5e7eb;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+footer h6, h6 a {
+  color: white;
+  font-size: 1rem;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+footer h3 {
+  padding: 0;
+  margin: 0;
+}
+
+footer ol {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
