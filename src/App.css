@@ -1,3 +1,64 @@
-.App {
+h1, footer {
+  margin: 0;
+  padding: 20px 0;
+  background-color: purple;
   text-align: center;
+  color: white;
+}
+
+form {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: purple;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  gap: 10px;
+}
+
+form button {
+  background-color: purple;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+}
+
+button[type="reset"] {
+  background-color: black;
+}
+
+form input {
+  padding: 0.7rem;
+  font-size: 1rem;
+  border: 1px solid purple;
+}
+form button {
+  font-size: 1rem;
+}
+
+h2 {
+  text-align: center;
+  color: purple;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
