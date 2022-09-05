@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import "./App.css";
 import twitterLogo from "./icons/002-twitter.png";
 import githubLogo from "./icons/003-github.png";
