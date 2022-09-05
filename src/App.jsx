@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
 import "./App.css";
-import twitterLogo from "./icons/002-twitter.png"
-import githubLogo from "./icons/003-github.png"
-import linkedinLogo from "./icons/001-linkedin.png"
+import twitterLogo from "./icons/002-twitter.png";
+import githubLogo from "./icons/003-github.png";
+import linkedinLogo from "./icons/001-linkedin.png";
+import { validateInput } from "./helper/helperfunctions";
 
 function App() {
   const [birthday, setBirthday] = useState("");
@@ -17,6 +18,10 @@ function App() {
   }
   function onSubmitHandler(e) {
     e.preventDefault();
+    if (!validateInput(birthday, luckyNumber)) {
+      setIsLucky("Invalid Input");
+      return;
+    }
     let sumOfBirthday = 0;
     birthday.split("").forEach((char) => {
       if (!isNaN(Number(char))) sumOfBirthday += Number(char);
@@ -32,10 +37,6 @@ function App() {
     setIsLucky("");
     setLuckyNumber("");
   }
-  useEffect(() => {
-    console.log(typeof birthday);
-    console.log(luckyNumber);
-  }, [birthday, luckyNumber]);
 
   return (
     <>
@@ -70,7 +71,9 @@ function App() {
         {isLucky && <h2>{isLucky}</h2>}
       </main>
       <footer>
-        <h6>created by <a href="https://wasimraja.me/portfolio">Wasim Raja</a></h6>
+        <h6>
+          created by <a href="https://wasimraja.me/portfolio">Wasim Raja</a>
+        </h6>
         <ol>
           <li>
             <a
