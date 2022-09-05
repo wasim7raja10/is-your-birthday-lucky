@@ -45,6 +45,7 @@ function App() {
         <form onSubmit={onSubmitHandler} onReset={resetHandler}>
           <div className="birthday">
             <label htmlFor="date">Birthday</label>
+            <p style={{fontSize: 10}}>(we wont store your birthday)</p>
             <input
               value={birthday}
               onChange={onBirthdayChangeHandler}

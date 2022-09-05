@@ -13,7 +13,7 @@ form {
   flex-direction: column;
   align-items: center;
   color: purple;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: bold;
 }
 
@@ -23,6 +23,10 @@ form div {
   align-items: center;
   padding: 20px;
   gap: 10px;
+}
+
+form .birthday {
+  gap: 0;
 }
 
 form button {
