@@ -93,3 +93,7 @@ ol {
   margin: 0;
   padding: 0;
 }
+
+.result {
+  text-align: center;
+}

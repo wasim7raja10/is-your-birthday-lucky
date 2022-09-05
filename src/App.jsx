@@ -68,7 +68,17 @@ function App() {
             <button type="reset">Reset</button>
           </div>
         </form>
-        {isLucky && <h2>{isLucky}</h2>}
+        <div className="result">
+          {isLucky === "Your birthday is lucky" && <img
+            src="https://c.tenor.com/URUR582evd0AAAAM/victory-winning.gif"
+            alt="victory"
+          />}
+           {isLucky === "Your birthday is not that lucky" && <img
+            src="https://c.tenor.com/MLJpRPa9YX0AAAAM/inbetweeners-unlucky.gif"
+            alt="unlucky"
+          />}
+          {isLucky && <h2>{isLucky}</h2>}
+        </div>
       </main>
       <footer>
         <h6>
